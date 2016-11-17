@@ -4,6 +4,9 @@ var os = require('os');
 
 var ip = void 0,
     port = void 0;
+
+console.log('use : ' , process.argv);
+
 if ( process.argv.length === 1 ) {
     var ipObj = os.networkInterfaces();
     for ( var ipClass in ipObj ){
@@ -15,13 +18,13 @@ if ( process.argv.length === 1 ) {
             }
         }
     }
+}else if ( process.argv.length === 2 ) {
+    ip = process.argv[1];
+}else if( process.argv.length === 3 ){
+    ip = process.argv[1];
+    port = process.argv[2];
 }else{
-    try{
-        ip = process.argv[1],
-        port = process.argv[2];
-    }catch(e){
-        console.log('arguments invalid. please use `dnsproxy[,ip[,port]]`');
-    }
+    console.log('arguments invalid. please use `dnsproxy[,ip[,port]]`');
 }
 
 proxy.createProxyServer(ip , port);
