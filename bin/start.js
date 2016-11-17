@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 'use strict';
 var proxy = require('../index');
 var os = require('os');
