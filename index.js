@@ -15,7 +15,7 @@ var respond = function(rinfo){
     };
 };
 
-exports.createProxyServer = function(ip , port){
+module.exports.createProxyServer = function(ip , port){
     server.on('message' , function(msg , rinfo){
         var rq = request(msg) , 
             rs = respond(rinfo);
