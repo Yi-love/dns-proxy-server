@@ -1,11 +1,11 @@
+#!/usr/bin/env node
+
 'use strict';
 var proxy = require('../index');
 var os = require('os');
 
 var ip = void 0,
     port = void 0;
-
-console.log('use : ' , process.argv);
 
 if ( process.argv.length === 1 ) {
     var ipObj = os.networkInterfaces();
@@ -27,4 +27,4 @@ if ( process.argv.length === 1 ) {
     console.log('arguments invalid. please use `dnsproxy[,ip[,port]]`');
 }
 
-proxy(ip , port);
+proxy.createProxyServer(ip , port);
