@@ -1,0 +1,25 @@
+{
+  "name": "dns-proxy",
+  "version": "1.0.0",
+  "description": "dns proxy server",
+  "main": "index.js",
+  "bin": {
+    "dnsproxy": "./bin/start.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yi-love/dns-proxy.git"
+  },
+  "keywords": [
+    "dns"
+  ],
+  "author": "Jin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yi-love/dns-proxy/issues"
+  },
+  "homepage": "https://github.com/Yi-love/dns-proxy#readme"
+}
