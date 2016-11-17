@@ -42,5 +42,5 @@ exports.createProxyServer = function(ip , port){
         var address = server.address();
         console.log('server listening: ' ,address.address,':',address.port);
     });
-    server.bind({port:port || 53,address:ip || '8.8.8.8'});
+    server.bind({port:port || 53,address:ip});
 };
