@@ -15,7 +15,7 @@ var respond = function(rinfo){
     };
 };
 
-module.exports.createProxyServer = function(ip , port){
+module.exports = function createProxyServer(ip , port){
     server.on('message' , function(msg , rinfo){
         var rq = request(msg) , 
             rs = respond(rinfo);
@@ -43,4 +43,6 @@ module.exports.createProxyServer = function(ip , port){
         console.log('server listening: ' ,address.address,':',address.port);
     });
     server.bind({port:port || 53,address:ip});
+
+    return server;
 };

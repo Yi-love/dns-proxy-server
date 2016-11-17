@@ -27,4 +27,4 @@ if ( process.argv.length === 1 ) {
     console.log('arguments invalid. please use `dnsproxy[,ip[,port]]`');
 }
 
-proxy.createProxyServer(ip , port);
+proxy(ip , port);
