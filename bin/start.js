@@ -6,6 +6,8 @@ var os = require('os');
 var ip = void 0,
     port = void 0;
 
+console.log('use :' , process.argv);
+
 if ( process.argv.length === 1 ) {
     var ipObj = os.networkInterfaces();
     for ( var ipClass in ipObj ){
