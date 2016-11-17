@@ -1,5 +1,5 @@
 {
-  "name": "dns-proxy",
+  "name": "dns-proxy-server",
   "version": "1.0.0",
   "description": "dns proxy server",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yi-love/dns-proxy.git"
+    "url": "git+https://github.com/Yi-love/dns-proxy-server.git"
   },
   "keywords": [
     "dns"
