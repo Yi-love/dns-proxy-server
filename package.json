@@ -1,6 +1,6 @@
 {
   "name": "dns-proxy-server",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "dns proxy server",
   "main": "index.js",
   "bin": {

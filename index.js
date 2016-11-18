@@ -21,7 +21,7 @@ exports.createProxyServer = function(ip , port){
             rs = respond(rinfo);
         dns.lookup( rq.domain , function(err , address , family){
             if ( address !== void 0 ) {
-                console.log('address: ' , address);
+                console.log('address: ' , address , rq.domain);
                 return rs(rq , address);
             }else{
                 dns.resolve4(rq.domain, function(error, addresses){
@@ -29,7 +29,7 @@ exports.createProxyServer = function(ip , port){
                     if ( addresses === void 0 ) {
                         return console.log('missing...' , rq.domain);
                     }
-                    console.log('address*: ' , addresses);
+                    console.log('address[net]: ' , addresses , rq.domain);
                     return rs(rq , addresses);
                 });
             }
