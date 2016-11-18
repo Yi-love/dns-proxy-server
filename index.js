@@ -9,8 +9,8 @@ var response = require('./lib/response');
 var server = dgram.createSocket('udp4');
 
 var respond = function(rinfo){
-    return function(rq , address){
-        var buf = response(rq , 1 , address);
+    return function(rq , ttl , address){
+        var buf = response(rq , ttl , address);
         server.send(buf, 0, buf.length, rinfo.port, rinfo.address);
     };
 };
@@ -22,7 +22,7 @@ exports.createProxyServer = function(ip , port){
         dns.lookup( rq.domain , function(err , address , family){
             if ( address !== void 0 ) {
                 console.log('address: ' , address , rq.domain);
-                return rs(rq , address);
+                return rs(rq , 1 , address);
             }else{
                 dns.resolve4(rq.domain, function(error, addresses){
                     console.log('dns resolve4 server...');
@@ -30,7 +30,7 @@ exports.createProxyServer = function(ip , port){
                         return console.log('missing...' , rq.domain);
                     }
                     console.log('address[net]: ' , addresses , rq.domain);
-                    return rs(rq , addresses);
+                    return rs(rq , 30 , addresses);
                 });
             }
         });
