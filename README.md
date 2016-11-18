@@ -1,7 +1,7 @@
 # dns-proxy-server
 dns proxy server
 
-dns server depend `os` , `dns` , `dgram` module on  Node.js eenvironment。use `dgram` module create proxy server , 
+dns server depend `os` , `dns` , `dgram` module on  Node.js environment。use `dgram` module create proxy server , 
 `lookup()` function  and `resolve4()` funtion will be resolve domain to ipv4.
 
 ```
