@@ -2,7 +2,8 @@
 dns proxy server
 
 dns server depend `os` , `dns` , `dgram` module on  Node.js environment。use `dgram` module create proxy server , 
-`lookup()` function  and `resolve4()` funtion will be resolve domain to ipv4.
+`lookup()` function  and `resolve4()` funtion will be resolve domain to ipv4. 
+dns proxy server depend on operation system configuration files (e.g. `/etc/hosts` or `hosts`).
 
 ### why
 you to develop a program on your computer. want to test on mobile phones. 

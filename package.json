@@ -1,7 +1,7 @@
 {
   "name": "dns-proxy-server",
-  "version": "1.1.2",
-  "description": "dns proxy server",
+  "version": "1.1.3",
+  "description": "dns proxy server & use dnsproxy on cmd online",
   "main": "index.js",
   "bin": {
     "dnsproxy": "./bin/start.js"
@@ -14,7 +14,13 @@
     "url": "git+https://github.com/Yi-love/dns-proxy-server.git"
   },
   "keywords": [
-    "dns"
+    "dns",
+    "proxy",
+    "dns proxy",
+    "resolve",
+    "domain",
+    "http",
+    "http proxy"
   ],
   "author": "Jin",
   "license": "MIT",
