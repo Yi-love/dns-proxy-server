@@ -16,6 +16,9 @@ if ( process.argv.length === 2 ) {
                 break;
             }
         }
+        if ( ip ) {
+            break;
+        }
     }
 }else if ( process.argv.length === 3 ) {
     ip = process.argv[2];

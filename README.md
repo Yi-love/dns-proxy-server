@@ -38,3 +38,12 @@ you should running `dnsproxy` in the computer ,and change mobile `dns` to the co
  //or
  dnsproxy 8.8.8.8 53
 ```
+
+
+### MAC
+please use `sudo`.
+
+eq:
+```
+ sudo dnsproxy
+```
