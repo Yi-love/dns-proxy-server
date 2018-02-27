@@ -25,7 +25,7 @@ you should running `dnsproxy` in the computer ,and change mobile `dns` to the co
 
 代理的ip请勿使用`127.0.0.1` 或者虚拟ip。请使用真实对外ip.
 
-![dns-proxy-server](./dns-proxy-demi.jpg)
+![dns-proxy-server](./dns-proxy-demo.jpg)
 
 配置dns解析的host:
 
